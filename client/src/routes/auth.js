@@ -4,7 +4,7 @@ import { withApollo, compose } from 'react-apollo';
 import { Redirect } from 'react-router-dom';
 import gql from 'graphql-tag';
 
-const AUTH_PROFILE_ID = 'ck24rfib300dt01jrgiy465k6';
+const AUTH_PROFILE_ID = '';
 
 const CURRENT_USER_QUERY = gql`
   query CurrentUser {

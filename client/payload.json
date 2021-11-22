@@ -1,0 +1,133 @@
+
+  query{
+    postsList(filter:
+      {
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "country"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["colombia","allCountry"]
+          }
+        }
+      }
+    }
+  },
+      
+      AND:{
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "country"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["colombia","allCountry"]
+          }
+        }
+      }
+    }
+  },{
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "city"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["cali","allCity"]
+          }
+        }
+      }
+    }
+  },{
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "department"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["marketing","allDepartment"]
+          }
+        }
+      }
+    }
+  }
+      [{
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "country"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["colombia","allCountry"]
+          }
+        }
+      }
+    }
+  },{
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "city"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["cali","allCity"]
+          }
+        }
+      }
+    }
+  },{
+    facets:
+    {some:
+      {
+         key:
+        {
+          name: {
+            contains: "department"
+          }
+        },
+        AND:{
+          name: {
+            in:
+            ["marketing","allDepartment"]
+          }
+        }
+      }
+    }
+  }]

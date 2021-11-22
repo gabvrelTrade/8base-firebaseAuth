@@ -6,16 +6,16 @@ import firebase from 'firebase';
 
 import { Routes } from './routes';
 
-const API_ENDPOINT_URI = 'https://api.8base.com/ck1auj5kk00k101mqdfu55sg2';
+const API_ENDPOINT_URI = '';
 
 var FIREBASE_CONFIGURATION = {
   apiKey: "",
   authDomain: "",
-  databaseURL: "",
   projectId: "",
   storageBucket: "",
   messagingSenderId: "",
-  appId: ""
+  appId: "",
+  measurementId: "",
 };
 
 const firebaseAuth = firebase.initializeApp(FIREBASE_CONFIGURATION).auth();
